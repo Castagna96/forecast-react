@@ -1,12 +1,18 @@
 import React from 'react'
 import './App.css';
-import Weather from './components/data.js'
+import Weather from './components/Data.js'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Main from './components/Main';
+
+
 
 function App() {
   return (
     <div className='app-container'>
-        <h1 className='app-heading'>Weather App</h1>
-        <Weather/>
+        <Navbar />
+        <Main />
+        <Footer />
     </div>
   );
 }

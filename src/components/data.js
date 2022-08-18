@@ -38,18 +38,18 @@ function Weather() {
         value={inputValue}
         onInput={(e) => setInputValue(e.target.value)}
       />
-      
+
       {!inputValue.length ? null : data ? (
         <div>
           <p className="weather-p-city">Weather Details of City : {city}</p>
-          
+
           <div className="weather-information-container">
           <p >Current Temperature : {data.temp} °C</p>
           <p >Temperature Range : {data.temp_min} °C  to  {data.temp_max} °C</p>
           <p >Humidity  : {data.humidity}</p>
           <p >Sea Level  : {data.sea_level}</p>
           <p >Ground Level  : {data.grnd_level}</p>
-          
+
           </div>
         </div>
       ) : (
