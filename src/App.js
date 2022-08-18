@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import Weather from './components/Data.js'
+import Weather from './components/data.js'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Main from './components/Main';

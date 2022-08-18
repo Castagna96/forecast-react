@@ -1,16 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+import useGeoLocation from "react-ipgeolocation";
+
+
+
+
 
 const Main = () => {
+//somewhere in your app/component
+const location = useGeoLocation();
+console.log(location.country);
+
+
   return(
     <MainContainer>
       <div className='main'>
-        <div className='main-1'>
+        <div className='main-1'>npm
           <div className='top'>
-            arriba
+          test
           </div>
           <div className='bottom'>
-            abajo
+            {location.country}
           </div>
           <div className='stuff'>
             accesorios
